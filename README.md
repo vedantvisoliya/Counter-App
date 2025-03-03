@@ -1,16 +1,46 @@
-# counter_app
+# COUNTER APP (Flutter Project)
 
-A new Flutter project.
+## Overview
+This is a Flutter application built using Dart. It is designed to be a cross-platform mobile application for Android and iOS.
 
-## Getting Started
+## Installation
 
-This project is a starting point for a Flutter application.
+### Prerequisites
+- Install [Flutter](https://flutter.dev/docs/get-started/install)
+- Install [Dart](https://dart.dev/get-dart)
+- Can Set up an emulator or connect a physical device(optional)
 
-A few resources to get you started if this is your first Flutter project:
+### Steps
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/vedantvisoliya/Counter-App.git
+   cd counter_app
+   ```
+2. Install dependencies:
+   ```sh
+   flutter pub get
+   ```
+3. Run the app:
+   ```sh
+   flutter run
+   ```
+## Build & Release
+### Android
+```sh
+flutter build apk
+```
+### iOS
+```sh
+flutter build ios
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Contributing
+1. Fork the repository
+2. Create a new branch (`feature/your-feature`)
+3. Commit your changes (`git commit -m 'Add new feature'`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Create a Pull Request
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots
+
+![App Screenshot](screenshots/counter-app-1.png)
