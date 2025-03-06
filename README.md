@@ -43,4 +43,4 @@ flutter build ios
 
 ## Screenshots
 
-![App Screenshot](screenshots/counter-app-1.png)
+![App Screenshot](screenshots/Counter_app_2.2.png)
