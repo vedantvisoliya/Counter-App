@@ -45,50 +45,58 @@ class _CounterAppMaterialPageState extends State<CounterAppMaterialPage>{
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Container(
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               // margin: EdgeInsets.only(right: 200),
-              padding: EdgeInsets.only(bottom: 15),
-              child: ElevatedButton(
-                onPressed: (){
-                  setState(() {
-                    counterVariable += 1;
-                  });
-                },
-                style: ButtonStyle(
-                  elevation: WidgetStatePropertyAll(5),
-                  backgroundColor: WidgetStatePropertyAll(Color.fromARGB(255, 200, 76, 237)),
-                  shape: WidgetStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))),
-                ),
-                child: const Text(
-                  "+",
-                  style: TextStyle(
-                    fontSize: 38,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
+              children: [
+                Container(
+                  padding: EdgeInsets.only(right: 5),
+                  child: ElevatedButton(
+                  onPressed: (){
+                    setState(() {
+                      counterVariable += 1;
+                    });
+                  },
+                  style: ButtonStyle(
+                    elevation: WidgetStatePropertyAll(5),
+                    backgroundColor: WidgetStatePropertyAll(Color.fromARGB(255, 200, 76, 237)),
+                    shape: WidgetStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))),
                   ),
+                  child: const Text(
+                    "+",
+                    style: TextStyle(
+                      fontSize: 38,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ), 
+                                ),
                 ), 
-              ),
-            ),
-            ElevatedButton(
-              onPressed: (){
-                setState(() {
-                  counterVariable -= 1;
-                });
-              },
-              style: ButtonStyle(
-                elevation: WidgetStatePropertyAll(5),
-                backgroundColor: WidgetStatePropertyAll(Color.fromARGB(255, 200, 76, 237)),
-                shape: WidgetStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))),
-              ),
-              child: const Text(
-                "-",
-                style: TextStyle(
-                  fontSize: 40,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
+              Container(
+                padding: EdgeInsets.only(left: 5),
+                child: ElevatedButton(
+                  onPressed: (){
+                    setState(() {
+                      counterVariable -= 1;
+                    });
+                  },
+                  style: ButtonStyle(
+                    elevation: WidgetStatePropertyAll(5),
+                    backgroundColor: WidgetStatePropertyAll(Color.fromARGB(255, 200, 76, 237)),
+                    shape: WidgetStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))),
+                  ),
+                  child: const Text(
+                    "-",
+                    style: TextStyle(
+                      fontSize: 40,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ), 
                 ),
-              ), 
-            ),
+              ),
+              ],
+            ), 
           ],
         ),
       ),
